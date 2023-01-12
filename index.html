@@ -1,12 +1,23 @@
 <!DOCTYPE html> 
 <html lang="en">
     <head>
-        <meta charset="UTF-B">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>dexter-503 | Terminal</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
     </head>
     <body>
-        <textarea type="textarea" id="" cols="30" rows="10"></textarea>
+        <script>
+            $('body').terminal({
+                hello: function(what) {
+                    this.echo('Hello, ' + what + '. Welcome to this terminal. ');
+                }
+            }, {
+                greetings: 'Terminal style portfolio: dexter-503'
+            }, {
+                whoareyou: function() {
+                    this.echo('I am dexter-503');
+                }
+            });
+        </script>
     </body>
 </html>
