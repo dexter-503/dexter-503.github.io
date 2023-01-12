@@ -15,9 +15,10 @@ $('body').terminal({
                     this.echo('I have worked with C, C++, HTML, CSS, JavaScript, Java and Python till date.');
                 },
                 help: function() {
-                    this.echo('whoareyou    github   email   about   lang');
+                    this.echo('whoareyou   github   email   about   lang');
                 }
             }, 
             {
-                greetings: 'Terminal style portfolio: dexter-503'
+                completion: true,
+                greetings: greetings.innerHTML
             });
