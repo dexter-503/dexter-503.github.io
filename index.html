@@ -6,5 +6,18 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
     </head>
     <body>
+        <script>
+            $('body').terminal({
+                hello: function(what) {
+                    this.echo('Hello, ' + what + '. Welcome to this terminal. ');
+                }
+            }, {
+                greetings: 'Terminal style portfolio: dexter-503'
+            }, {
+                whoareyou: function() {
+                    this.echo('I am dexter-503');
+                }
+            });
+        </script>
     </body>
 </html>
