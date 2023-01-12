@@ -1,7 +1,4 @@
 $('body').terminal({
-                hello: function(what) {
-                    this.echo('Hi, ' + what + '! Welcome to my terminal. ');
-                },
                 whoareyou: function() {
                     this.echo('I am dexter-503.');
                 },
@@ -10,6 +7,15 @@ $('body').terminal({
                 },
                 email: function() {
                     this.echo('ranottyl44@gmail.com');
+                },
+                about: function() {
+                    this.echo('I am a Computer Science enthusiast. My areas of interest are - AI, ML & Web Development. I am also interested in learning Game Design and Game Development in the near future.');
+                },
+                lang: function() {
+                    this.echo('I have worked with C, C++, HTML, CSS, JavaScript, Java and Python till date.');
+                },
+                help: function() {
+                    this.echo('whoareyou    github   email   about   lang');
                 }
             }, 
             {
