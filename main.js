@@ -4,6 +4,12 @@ $('body').terminal({
                 },
                 whoareyou: function() {
                     this.echo('I am dexter-503.');
+                },
+                github: function() {
+                    this.echo('https://github.com/dexter-503/');
+                },
+                email: function() {
+                    this.echo('ranottyl44@gmail.com');
                 }
             }, 
             {
